@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agendamento Manutenção</title>
+        
+        <!--Define a viewport (responsividade)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Corrige problemas de acentuação.-->
+        <meta charset="utf-8">    
+        
+        <!--Adiciona CSS Bootstrap-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        
+        <!--Adiciona CSS personalizado-->
+        <link href="css/meuEstilo.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <h4>Manutenção de Computadores</h4>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                                    </span>Agendamento</a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-plus"></span><a href="inseriAgenda.html">Adicionar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-search"></span><a href="listaAgenda.html">Listar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-trash text-danger"></span><a href="excluiAgenda.html" class="text-danger">
+                                                    Excluir</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h5 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                                    </span>Faturamento</a>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="table">
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-cog"></span><a href="#">Ordem de Serviço</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="glyphicon glyphicon-ok text-success"></span><a href="#" class="text-success">Vendas</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+        
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>     
+    </body>
+</html>
